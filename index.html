@@ -127,7 +127,7 @@
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-        <p class="site-subtitle"><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=28864044&auto=1&height=66"></iframe></p>
+        <p class="site-subtitle"><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=33211676&auto=1&height=66"></iframe></p>
       
   </div>
 
@@ -341,7 +341,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://fengcong.top/2015/06/05/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://fengcong.top/2018/10/08/webssh/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="冯 聪">
@@ -355,7 +355,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
             
-            <a href="/2015/06/05/hello-world/" class="post-title-link" itemprop="url">HEXO 搭建个人博客</a>
+            <a href="/2018/10/08/webssh/" class="post-title-link" itemprop="url">webssh</a>
           
         </h1>
 
@@ -370,7 +370,7 @@
                 
               
 
-              <time title="创建时间：2015-06-05 16:24:55" itemprop="dateCreated datePublished" datetime="2015-06-05T16:24:55+08:00">2015-06-05</time>
+              <time title="创建时间：2018-10-08 17:01:39" itemprop="dateCreated datePublished" datetime="2018-10-08T17:01:39+08:00">2018-10-08</time>
             </span>
           
             
@@ -381,144 +381,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-10-09 15:02:14" itemprop="dateModified" datetime="2019-10-09T15:02:14+08:00">2019-10-09</time>
-              </span>
-            
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/HEXO/" itemprop="url" rel="index"><i class="fa fa-tag"></i></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Hexo 是一款基于 Node.js 的静态博客框架。Hexo 使用 Markdown 解析文章，用户在本地安装Hexo并进行写作，通过一条命令，Hexo即可利用靓丽的主题自动生成静态网页。</p>
-<ul>
-<li><p>安装hexo</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo -g</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Hexo初始化项目</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init boke(生成的博客文件夹的名字，自定义,会在对应执行该语句的路径生成对应的文件)</span><br><span class="line">cd boke</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>执行完上面的命令 生成以下文件<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">node_modules：是依赖包</span><br><span class="line">public：存放的是生成的页面</span><br><span class="line">scaffolds：命令生成文章等的模板</span><br><span class="line">source：用命令创建的各种文章</span><br><span class="line">themes：主题</span><br><span class="line">_config.yml：整个博客的配置</span><br><span class="line">db.json：source解析所得到的</span><br><span class="line">package.json：项目所需模块项目的配置信息</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-<li><p>安装github的管理工具</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">type: git</span><br><span class="line">repo: https://gitee.com/eastside/blog.git</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>每次上传新的博客内容，先要清理本地的缓存文件</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>执行生成上传命令</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>上传需要安装</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>编写新的md文件代表新的博客</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new 文件名</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>本地预览和同时发布到远程的浏览结果不一致</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">这是由缓存造成的,需要先hexo clean,再hexo g -d部署到远程</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>HEXO语法转义规则</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">! &amp;#33; — 惊叹号 Exclamation mark</span><br><span class="line">” &amp;#34; &amp;quot; 双引号 Quotation mark</span><br><span class="line"># &amp;#35; — 数字标志 Number sign</span><br><span class="line">$ &amp;#36; — 美元标志 Dollar sign</span><br><span class="line">% &amp;#37; — 百分号 Percent sign</span><br><span class="line">&amp; &amp;#38; &amp;amp; Ampersand</span><br><span class="line">‘ &amp;#39; — 单引号 Apostrophe</span><br><span class="line">( &amp;#40; — 小括号左边部分 Left parenthesis</span><br><span class="line">) &amp;#41; — 小括号右边部分 Right parenthesis</span><br><span class="line">* &amp;#42; — 星号 Asterisk</span><br><span class="line">+ &amp;#43; — 加号 Plus sign</span><br><span class="line">&lt; &amp;#60; &amp;lt; 小于号 Less than</span><br><span class="line">= &amp;#61; — 等于符号 Equals sign</span><br><span class="line">- &amp;#45; &amp;minus; — 减号</span><br><span class="line">&gt; &amp;#62; &amp;gt; 大于号 Greater than</span><br><span class="line">? &amp;#63; — 问号 Question mark</span><br><span class="line">@ &amp;#64; — Commercial at</span><br><span class="line">[ &amp;#91; --- 中括号左边部分 Left square bracket</span><br><span class="line">\ &amp;#92; --- 反斜杠 Reverse solidus (backslash)</span><br><span class="line">] &amp;#93; — 中括号右边部分 Right square bracket</span><br><span class="line">&#123; &amp;#123; — 大括号左边部分 Left curly brace</span><br><span class="line">| &amp;#124; — 竖线Vertical bar</span><br><span class="line">&#125; &amp;#125; — 大括号右边部分 Right curly brace</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-
-        
-      
-
-
-      <div>
-      
-    </div>
-    
-    </div>
-
-
-    
-
-
-    
-    
-    
-      <footer class="post-footer">
-          <div class="post-eof"></div>
-        
-      </footer>
-  </article>
-  
-  
-  
-
-    
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://fengcong.top/2014/10/08/webssh/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="冯 聪">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/12.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="旧事酒浓">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-            
-            <a href="/2014/10/08/webssh/" class="post-title-link" itemprop="url">webssh</a>
-          
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              
-                
-              
-
-              <time title="创建时间：2014-10-08 17:01:39" itemprop="dateCreated datePublished" datetime="2014-10-08T17:01:39+08:00">2014-10-08</time>
-            </span>
-          
-            
-
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-10-09 13:15:57" itemprop="dateModified" datetime="2019-10-09T13:15:57+08:00">2019-10-09</time>
+                <time title="修改时间：2019-10-13 00:14:38" itemprop="dateModified" datetime="2019-10-13T00:14:38+08:00">2019-10-13</time>
               </span>
             
           
@@ -610,6 +473,143 @@
 </li>
 <li><p>剩余的就是视图函数的调用和线程开启部分了！</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">@accept_websocket</span><br><span class="line">def webssh(request):</span><br><span class="line">    &apos;&apos;&apos;</span><br><span class="line">        1: 接收前端(ws)的命令，发给后台(ssh)</span><br><span class="line">        2: 接收后台的返回结果，给到前端</span><br><span class="line">    &apos;&apos;&apos;</span><br><span class="line">    if request.is_websocket:</span><br><span class="line">        channle = _ssh(host, username=username, password=password)</span><br><span class="line">        ws = request.websocket </span><br><span class="line">        t = threading.Thread(target=recv_ssh_msg,args=(channle,ws))</span><br><span class="line">        t.setDaemon(True) </span><br><span class="line">        t.start() # 线程开启</span><br><span class="line">        while 1:</span><br><span class="line">            cmd = ws.wait() # 阻塞接收前端发来的命令</span><br><span class="line">            if cmd:</span><br><span class="line">                channle.send(cmd) # 由SSH通道转交给Linux环境</span><br><span class="line">            else: # 连接断开 跳出循环 </span><br><span class="line">                break</span><br><span class="line">        ws.close() # 释放对应套接字资源</span><br><span class="line">        channle.close()</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+        
+      
+
+
+      <div>
+      
+    </div>
+    
+    </div>
+
+
+    
+
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </article>
+  
+  
+  
+
+    
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://fengcong.top/2017/06/05/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="冯 聪">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/12.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="旧事酒浓">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2017/06/05/hello-world/" class="post-title-link" itemprop="url">HEXO 搭建个人博客</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2017-06-05 16:24:55" itemprop="dateCreated datePublished" datetime="2017-06-05T16:24:55+08:00">2017-06-05</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-10-13 00:14:23" itemprop="dateModified" datetime="2019-10-13T00:14:23+08:00">2019-10-13</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/HEXO/" itemprop="url" rel="index"><i class="fa fa-tag"></i></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Hexo 是一款基于 Node.js 的静态博客框架。Hexo 使用 Markdown 解析文章，用户在本地安装Hexo并进行写作，通过一条命令，Hexo即可利用靓丽的主题自动生成静态网页。</p>
+<ul>
+<li><p>安装hexo</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo -g</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Hexo初始化项目</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init boke(生成的博客文件夹的名字，自定义,会在对应执行该语句的路径生成对应的文件)</span><br><span class="line">cd boke</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>执行完上面的命令 生成以下文件<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">node_modules：是依赖包</span><br><span class="line">public：存放的是生成的页面</span><br><span class="line">scaffolds：命令生成文章等的模板</span><br><span class="line">source：用命令创建的各种文章</span><br><span class="line">themes：主题</span><br><span class="line">_config.yml：整个博客的配置</span><br><span class="line">db.json：source解析所得到的</span><br><span class="line">package.json：项目所需模块项目的配置信息</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>安装github的管理工具</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">type: git</span><br><span class="line">repo: https://gitee.com/eastside/blog.git</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>每次上传新的博客内容，先要清理本地的缓存文件</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>执行生成上传命令</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>上传需要安装</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>编写新的md文件代表新的博客</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new 文件名</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>本地预览和同时发布到远程的浏览结果不一致</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">这是由缓存造成的,需要先hexo clean,再hexo g -d部署到远程</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>HEXO语法转义规则</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">! &amp;#33; — 惊叹号 Exclamation mark</span><br><span class="line">” &amp;#34; &amp;quot; 双引号 Quotation mark</span><br><span class="line"># &amp;#35; — 数字标志 Number sign</span><br><span class="line">$ &amp;#36; — 美元标志 Dollar sign</span><br><span class="line">% &amp;#37; — 百分号 Percent sign</span><br><span class="line">&amp; &amp;#38; &amp;amp; Ampersand</span><br><span class="line">‘ &amp;#39; — 单引号 Apostrophe</span><br><span class="line">( &amp;#40; — 小括号左边部分 Left parenthesis</span><br><span class="line">) &amp;#41; — 小括号右边部分 Right parenthesis</span><br><span class="line">* &amp;#42; — 星号 Asterisk</span><br><span class="line">+ &amp;#43; — 加号 Plus sign</span><br><span class="line">&lt; &amp;#60; &amp;lt; 小于号 Less than</span><br><span class="line">= &amp;#61; — 等于符号 Equals sign</span><br><span class="line">- &amp;#45; &amp;minus; — 减号</span><br><span class="line">&gt; &amp;#62; &amp;gt; 大于号 Greater than</span><br><span class="line">? &amp;#63; — 问号 Question mark</span><br><span class="line">@ &amp;#64; — Commercial at</span><br><span class="line">[ &amp;#91; --- 中括号左边部分 Left square bracket</span><br><span class="line">\ &amp;#92; --- 反斜杠 Reverse solidus (backslash)</span><br><span class="line">] &amp;#93; — 中括号右边部分 Right square bracket</span><br><span class="line">&#123; &amp;#123; — 大括号左边部分 Left curly brace</span><br><span class="line">| &amp;#124; — 竖线Vertical bar</span><br><span class="line">&#125; &amp;#125; — 大括号右边部分 Right curly brace</span><br></pre></td></tr></table></figure>
+
+</li>
 </ul>
 
         
